@@ -1,0 +1,16 @@
+word_count = {}
+
+text = input("Text: ")
+
+words = text.split()
+
+for word in words:
+    count = word_count.get(word, 0)
+    word_count[word] = count + 1
+
+words = list(word_count.keys())
+words.sort()
+
+max_word = max(len(word) for word in words)
+for word in words:
+    print("{:{}} : {}".format(word, max_word, word_count[word]))
