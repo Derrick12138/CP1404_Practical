@@ -1,3 +1,5 @@
+
+
 word_count = {}
 
 text = input("Text: ")

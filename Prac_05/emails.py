@@ -1,8 +1,6 @@
 def main():
     email_to_name = {}
 
-
-
     email = input("Email: ")
     while email != "":
         name = get_name_in_email(email)
